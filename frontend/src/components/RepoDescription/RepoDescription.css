@@ -1,0 +1,22 @@
+.loader {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("background.jpeg");
+  background-position: center;
+  background-size: contain;
+}
+
+.errorsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorsection .sademoji {
+  display: inline-block;
+  height: 10vw;
+  width: 10vw;
+  margin: 20px auto;
+}

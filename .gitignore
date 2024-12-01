@@ -1,0 +1,11 @@
+# Ignore node_modules inside the frontend directory
+frontend/node_modules/
+
+# Other common ignore rules
+*.log
+.env
+dist/
+build/
+bower_components/
+.DS_Store
+Thumbs.db

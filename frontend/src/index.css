@@ -1,0 +1,25 @@
+:root {
+  --text-color: white;
+  --theme-mode: black;
+  --theme-color: green;
+  --opposite-theme-mode: white;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: color-mix(
+    in srgb,
+    var(--opposite-theme-mode) 5%,
+    var(--theme-mode)
+  );
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+}

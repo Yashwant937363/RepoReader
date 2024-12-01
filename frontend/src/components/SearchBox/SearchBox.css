@@ -1,0 +1,76 @@
+.input-container {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5px;
+  margin-top: 20px;
+}
+
+.input-container.go-up-animation {
+  transition: all 1s ease-out;
+  animation: go-up-container 1s ease-out forwards;
+}
+@keyframes go-up-container {
+  0% {
+    height: 100vh;
+    height: 100dvh;
+  }
+  99% {
+    height: 10vh;
+  }
+  100% {
+    height: fit-content;
+  }
+}
+
+.input-container .wrapper {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: 2%;
+  width: min(600px, 95vw);
+}
+
+.input-container .wrapper > * {
+  padding: 4%;
+  font-size: 1.2rem;
+  border-radius: 23px;
+  border: none;
+  outline: none;
+}
+
+.go-up-elements {
+  transition: all 1s ease-out;
+  animation: go-up-elements 1s ease-out forwards;
+}
+
+@keyframes go-up-elements {
+  0% {
+    padding: 4%;
+  }
+  100% {
+    padding: 3%;
+  }
+}
+
+.input-container .wrapper .url-input {
+  background-color: color-mix(
+    in srgb,
+    var(--opposite-theme-mode) 15%,
+    var(--theme-mode)
+  );
+  color: var(--text-color);
+}
+.input-container .wrapper .send-btn {
+  background-color: var(--opposite-theme-mode);
+}
+
+.input-container .wrapper .error-message {
+  position: relative;
+  top: -5px;
+  font-size: 0.8rem;
+  color: red;
+  padding: 2% !important;
+  padding-left: 3% !important;
+}

@@ -1,0 +1,26 @@
+.app-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  height: 80dvh;
+  background-color: color-mix(
+    in srgb,
+    var(--opposite-theme-mode) 15%,
+    var(--theme-mode)
+  );
+  border-radius: 23px;
+  margin: 2%;
+}
+
+body {
+  position: relative;
+}
+
+.threebackground {
+  height: 100%;
+  width: 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
